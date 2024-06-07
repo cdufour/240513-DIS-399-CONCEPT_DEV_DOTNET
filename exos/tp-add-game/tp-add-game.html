@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP - Add Game</title>
+    <style>
+        div {padding: 4px}
+        .correct {color: green}
+        .incorrect {color: red}
+    </style>
+</head>
+<body>
+    <h2>TP - Add Game</h2>
+    <div>
+        Nom du joueur<br>
+        <input type="text" placeholder="Nom du joueur" />
+    </div>
+    <div>
+        Nombre d'additions<br>
+        <input type="number" placeholder="nb additions" value="3">
+    </div>
+    <div>
+        Niveau de difficulté<br>
+        <select>
+            <option value="1" selected>Facile</option>
+            <option value="2">Moyen</option>
+            <option value="3">Difficile</option>
+        </select>
+    </div>
+
+    <div>
+        <button>Jouer !</button>
+    </div>
+
+    <section style="margin-top: 20px;">
+        <div>
+            <span>2</span>
+            <span>+</span>
+            <span>4</span>
+            <span>=</span>
+            <input type="text" value="6" />
+            <span class="correct">Correct</span>
+        </div>
+        <div>
+            <span>6</span>
+            <span>+</span>
+            <span>3</span>
+            <span>=</span>
+            <input type="text" value="8" />
+            <span class="incorrect">Incorrect</span>
+        </div>
+        <div>
+            <span>9</span>
+            <span>+</span>
+            <span>1</span>
+            <span>=</span>
+            <input type="text" value="10" />
+            <span class="correct">Correct</span>
+        </div>
+
+        <div>
+            <button>Vérifier</button>
+        </div>
+
+        <p>Score: 2/3</p>
+    </section>
+    
+</body>
+</html>

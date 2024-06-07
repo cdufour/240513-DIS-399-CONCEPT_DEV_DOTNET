@@ -1,0 +1,25 @@
+*** TP Add Game ***
+
+Créer un composant angular de type jeu pédagogique proposant à l'utilisateur
+de résoudre une ou plusieurs additions.
+
+-- Version 1 -- 
+Le composant affiche une seule addition et demande une réponse au joueur.
+Au clic sur le bouton "vérifier" on indique dans l'interface s'il a donné ou pas
+la bonne réponse
+
+-- Version 2 --
+Le composant génère plusieurs additions et demande les réponses au joueur.
+Au clic sur le bouton "vérifier" on indique dans l'interface les bonnes réponses
+ainsi que les mauvaises. On indique également le score.
+
+La version 2 proposera un niveau de difficulté:
+- facile: les opérandes sont comprises entre 0 et 9 inclus (ex: 6 + 3)
+- moyen : les opérandes sont comprises entre 10 et 99 inclus (ex: 62 + 33)
+- difficile : les opérandes sont comprises entre 100 et 999 inclus (ex: 620 + 335)
+
+Facultatif: envoyer à un serveur d'api json (ex: json-server) un objet contenant:
+- nom du joueur
+- score
+- date
+
