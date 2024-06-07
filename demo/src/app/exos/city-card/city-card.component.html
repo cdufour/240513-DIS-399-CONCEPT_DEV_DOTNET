@@ -1,0 +1,9 @@
+<div *ngIf="city">
+    <h3>{{ city.name }}</h3>
+    <p>Pays: {{ city.country }}</p>
+    <img 
+        [src]="'assets/images/cities/' + city.image" 
+        [alt]="city.name" 
+        width="200" 
+    />
+</div>

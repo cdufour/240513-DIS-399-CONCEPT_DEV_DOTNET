@@ -1,0 +1,39 @@
+{
+    "students": [
+        {
+            "id": 1,
+            "name": "Claire",
+            "grade": 18
+        },
+        {
+            "id": 2,
+            "name": "Daniel",
+            "grade": 2
+        },
+        {
+            "id": 3,
+            "name": "Nathalie",
+            "grade": 12.5
+        },
+        {
+            "name": "Toto",
+            "grade": 8,
+            "id": 4
+        },
+        {
+            "name": "Maria",
+            "grade": 19,
+            "id": 5
+        },
+        {
+            "name": "Alessandro",
+            "grade": 20,
+            "id": 6
+        },
+        {
+            "name": "Gabriele",
+            "grade": 23,
+            "id": 7
+        }
+    ]
+}

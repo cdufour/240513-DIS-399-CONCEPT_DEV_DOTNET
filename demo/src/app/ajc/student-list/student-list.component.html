@@ -1,0 +1,14 @@
+<h3>Liste des étudiants ({{ students.length }})</h3>
+<h4>Nombre de favoris: {{ nbFavorites }}</h4>
+
+<button (click)="showAllGrades = !showAllGrades">
+{{ showAllGrades ? 'Masquer' : 'Afficher' }} toutes les notes
+</button>
+
+<app-student-card 
+    [student]="student"
+    [showGrade]="showAllGrades"
+    (onCheck)="updateFavorites($event)"
+    *ngFor="let student of students"
+>
+</app-student-card>

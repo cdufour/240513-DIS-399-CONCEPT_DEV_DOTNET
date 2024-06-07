@@ -1,0 +1,13 @@
+<article *ngIf="student !== null">
+    <h4>{{ student.name }}</h4>
+    <button (click)="showGrade = !showGrade">Dernière note obtenue</button>
+    <span *ngIf="showGrade">{{ student.grade }}/20</span>
+    <hr>
+    <input 
+        (change)="onChange($event)"
+        type="checkbox" 
+    /><span>Ajouter aux étudiants favoris</span>
+</article>
+
+
+<!-- Afficher la note obtenue en cliquant sur un bouton -->

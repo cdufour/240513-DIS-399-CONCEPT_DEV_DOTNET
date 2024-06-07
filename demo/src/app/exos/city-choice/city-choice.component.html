@@ -1,0 +1,20 @@
+<select (change)="onChange($event)">
+    <option 
+        *ngFor="let city of cities">{{ city.name }}</option>
+</select>
+
+<!--
+Elvis Operator. Alternative syntaxique à:
+<p *ngIf="selectedCity !== null">{{ selectedCity.name }}</p>
+-->
+<p>Ville sélectionnée: {{ selectedCity?.name | uppercase }}</p>
+
+<!-- autres exemples d'utilsation de "pipes "-->
+<!--
+<p>{{ 'toto aime danser' | uppercase  }}</p>
+<p>{{ 'DUNIA' | lowercase  }}</p>
+<p>{{ myDate | date }}</p>
+<p>{{ myDate | date:'dd/MM/YYYY' }}</p>
+-->
+
+<exos-city-card [city]="selectedCity"></exos-city-card>

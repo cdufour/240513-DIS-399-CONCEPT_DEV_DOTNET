@@ -1,0 +1,32 @@
+<h2>Liste des étudiants</h2>
+
+<h3 [id]="students[1].name">...</h3>
+
+<p *ngFor="let student of students; index as i">
+    <span>#{{ i + 1 }} </span>
+    <span [ngStyle]="{'color': student.grade < 10 ? 'red' : 'black' }">{{ student.name }}</span>
+    <span [ngStyle]="style1"> => INFO !!!</span>
+    <span *ngIf="student.grade < 10"> => alerter les autorités !</span>
+</p>
+
+<ol>
+    <li 
+        *ngFor="let student of students"
+        [ngClass]="{winner: student.grade > 15, 'maxi-loser': student.grade < 10}"
+    >
+        {{ student.name }}
+    </li>
+</ol>
+
+<p [ngClass]="class1">Simple paragraphe</p>
+
+<select>
+    <option
+        [value]="'stu' + (i+1)"
+        [class]="'student_' + (i+1)"
+        *ngFor="let student of students; index as i"
+    >
+    {{ student.name }}
+    </option>
+</select>
+

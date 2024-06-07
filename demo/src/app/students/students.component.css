@@ -1,0 +1,3 @@
+.winner { color: green }
+.loser { color: orange; text-decoration: underline }
+.maxi-loser { color: red}

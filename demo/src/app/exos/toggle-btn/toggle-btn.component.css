@@ -1,0 +1,27 @@
+.switch {
+    background-color: #66cf91;
+    padding: 10px;
+    width: 80px;
+    border-radius: 18px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    position: relative;
+    margin: 4px;
+    font-size: 14pt;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 2px;
+    left: 62px;
+    width: 36px;
+    height:36px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .off {
+    background-color: #ccc;
+    color: #aaa;
+  }

@@ -1,0 +1,14 @@
+<div>
+    <input type="number" placeholder="10" [(ngModel)]="passlen" />
+</div>
+<div>
+    <input type="checkbox" [(ngModel)]="containNumbers" />présence de chiffres
+</div>
+<div>
+    <input type="checkbox" [(ngModel)]="containSpecialChars" />présence de caractères spéciaux
+</div>
+<div>
+    <button (click)="onClick()">Générer</button>
+</div>
+
+<p>Mot de passe généré: <strong>{{ pass }}</strong></p>
